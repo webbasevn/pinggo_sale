@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\dataLastMonthController;
+use App\Http\Controllers\DataDmsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('/data-last-month', dataLastMonthController::class);
+Route::apiResource('/data-date', DataDmsController::class);
